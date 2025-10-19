@@ -64,7 +64,13 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://localhost:5173",
+    "https://currency-xchange-rate.onrender.com",  # ✅ your frontend domain
 ]
+
+CORS_ALLOW_CREDENTIALS = True
+
+ALLOWED_HOSTS = ["*", "currency-xchange-backend.onrender.com"]
+
 
 ROOT_URLCONF = 'currency_backend.urls'
 
